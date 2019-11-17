@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 
-const NetworkArray = ({network,handleChange,handleClick}) => {
+const NetworkArray = ({network,handleChange,handleClick,loginuser}) => {
 	const cardComponent = network.map((user,i) => {
 		return(
 		<Card 
@@ -15,6 +15,7 @@ const NetworkArray = ({network,handleChange,handleClick}) => {
 			handleChange={handleChange}
 			handleClick ={handleClick}
 			id={network[i].id}
+			loginuser ={loginuser}
 
 			/>
 

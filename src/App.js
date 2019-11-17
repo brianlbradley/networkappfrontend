@@ -190,6 +190,7 @@ render() {
           /> 
          <NetworkArray 
              network={filteredNetwork}
+             loginuser={this.state.user}
              handleChange = {this.handleChange} 
              handleClick ={this.handleClick} 
              selectedCard={this.state.suggest}
